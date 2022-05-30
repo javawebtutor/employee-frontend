@@ -1,0 +1,40 @@
+<div class="container col-5">
+  <form>
+    <h3 class="text-center">Add an Employee</h3>
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="firstName"
+        placeholder="Enter First Name"
+        name="firstName"
+        [(ngModel)]="employee.firstName"
+      />
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="lastName"
+        placeholder="Enter Last Name"
+        name="lastName"
+        [(ngModel)]="employee.lastName"
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="text"
+        class="form-control"
+        id="email"
+        placeholder="Enter email"
+        name="email"
+        [(ngModel)]="employee.email"
+      />
+    </div>
+    <br />
+    <button type="submit" (click) = "addEmployee()" class="btn btn-primary">Submit</button>
+  </form>
+</div>
